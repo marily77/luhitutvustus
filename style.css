@@ -1,0 +1,112 @@
+/* style.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #090909;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  #pealkiri {
+    margin-top: 2rem;
+    color: rgba(238, 217, 79, 0.785);
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    margin-right: 100px;
+  }
+  
+  #suurpilt img {
+    max-width: 90%;
+    height: auto;
+    margin: 2rem 0;
+  }
+  
+  .marker {
+    display: inline-block;
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+    margin: 0.5rem;
+  }
+  
+  .marker:hover {
+    transform: scale(1.3);
+  }
+  
+  /* Marker Sizes and Colors */
+  .marker.red { background: rgb(145, 39, 62); width: 55px; height: 55px; }
+  .marker.blue { background: rgb(47, 47, 166); width: 45px; height: 45px; }
+  .marker.green { background: green; width: 35px; height: 35px; }
+  .marker.yellow { background: rgb(214, 217, 36); width: 20px; height: 20px; }
+  .marker.bigblue { background: rgb(47, 47, 166); width: 70px; height: 70px; }
+  .marker.orange { background: rgb(224, 108, 35); width: 60px; height: 60px; }
+  .marker.bigyellow { background: rgb(214, 217, 36); width: 70px; height: 70px; }
+  .marker.biggreen { background: green; width: 70px; height: 70px; }
+  .marker.smallred { background: rgb(198, 62, 146); width: 25px; height: 25px; }
+  .marker.smallorange { background: rgb(200, 80, 33); width: 35px; height: 35px; }
+  
+  .popup-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 2rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    #pealkiri {
+      font-size: 1.5rem;
+    }
+    .marker {
+      width: 30px !important;
+      height: 30px !important;
+    }
+  }
+  #suurpilt-wrapper {
+    position: relative;
+    width: 90%;
+    max-width: 1000px;
+    margin: 2rem auto;
+  }
+  
+  #suurpilt {
+    position: relative;
+    width: 100%;
+  }
+  
+  #suurpilt img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Popup dots positioned absolutely inside the image */
+  .popup {
+    position: absolute;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .marker:hover {
+    transform: scale(1.3);
+  }
+  
+  /* Marker positions using % for responsiveness */
+  .popup1 { top: 10%; left: 17%; }
+  .popup2 { top: 50%; left: 70%; }
+  .popup3 { top: 70%; left: 3%; }
+  .popup4 { top: 55%; left: 18%; }
+  .popup5 { top: 35%; left: 5%; }
+  .popup6 { top: 80%; left: 18%; }
+  .popup7 { top: 10%; left: 75%; }
+  .popup8 { top: 75%; left: 81%; }
+  .popup9 { top: 30%; left: 68%; }
+  .popup10 { top: 68%; left: 63%; }
+  
+  
